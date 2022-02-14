@@ -15,7 +15,7 @@ In the end it turned into an fun exercise. I was able to write a solver that bru
 This is the inital commit based on those numbers. The goal here is to share what I started with those I boasted to and then try to further optimize to solve for 100% of the words in the answer list with fewer guesses than right now.
 
 # Setup
-None so far, unsing only standard python.
+None so far, using only standard python.
 
 # Description
 A brute force algorithm that attempts to solve wordle by reducing the possible solution set then attempting to pick the next guess from that set. The reduce method exludes words that cannot be a valid solution. The next guess method attempts to pick the next word which provides the most possible data to further improve the reduce. 
@@ -36,8 +36,8 @@ Simple implementation of the game. It only has one method which is make_guess, t
 Contains the history of guesses made along with the data about green, yellow and grey letters. This class is used by both the game and solver.
 
 # TODO
-- [] Implement new next_guess method in wordlesolver which includes more possible guesses. The method is currently implemented to favor words based on the frequency of unidentified in the solution set. The method will stop when it finds all the words with the five most frequent indentified letters. This is not an ideal solution as it doesn't allow the guess picker to also consider the frequency per position. 
-- [] Update the best_guess method in wordlesolver to not include green letters in the word score.
-- [] Implement a better progress bar for main.py, it's really bad.
-- [] Add command line arguments to main.py to allow it to solve for one word, not the complete set of words. 
-- [] Cleanup wordledata, some of the functionality in that class does not belong there, it was just done for convience. 
+- [ ] Implement new next_guess method in wordlesolver which includes more possible guesses. The method is currently implemented to favor words based on the frequency of unidentified in the solution set. The method will stop when it finds all the words with the five most frequent indentified letters. This is not an ideal solution as it doesn't allow the guess picker to also consider the frequency per position. 
+- [ ] Update the best_guess method in wordlesolver to not include green letters in the word score.
+- [ ] Implement a better progress bar for main.py, it's really bad.
+- [ ] Add command line arguments to main.py to allow it to solve for one word, not the complete set of words. 
+- [ ] Cleanup wordledata, some of the functionality in that class does not belong there, it was just done for convience. 
