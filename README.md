@@ -3,10 +3,11 @@ wordle craze started I looked into how others were solving the problem. Most of 
 to solve the problem for almost every possible 5-letter english word. Since the game itself is constrained to only 2315 words, 
 I decided to see if I could simply brute force a solution instead of taking a novel approach.
 
-This effort started for the following reasons.
+I started this effort because I was boasting on slack and I was called out for it. Per that conversation I had to solve the problem with the following constraints. 
 
-1. I was boasting on slack that I could solve Wordle for 2315 words in a few hours (I didn't)
-2. That my solution would match some of the more novel approaches in terms of average guesses, 3.4 to be exact (still working on it, but unlikely)
+1. It should only take a few hours (it didn't)
+2. The average guess count should be 3.4 or better, matching a specific novel solution (still working on it, but unlikely)
+3. I would not copy any algorithms found online or use any word scoring systems published by others (I didn't)
 
 In the end it turned into an fun exercise. I was able to write a solver that brute forced a solution for 98% of the words in the answer list in about 6 hours. Through some bug fixes and optimizations I was able to get the percentage above 99% with an average number of guesses in the range of 3.55. 
 
